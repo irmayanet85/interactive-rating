@@ -15,12 +15,12 @@
 
     }
     .hover:hover {
-        background-color: $color-lightGrey;
+        background-color: $color-orange;  
         color: $color-white;
     }
-
+    
     .selected {
-        background-color: $color-orange;  
+        background-color: $color-lightGrey;
         color: $color-white;
      
     }

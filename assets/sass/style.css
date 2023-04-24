@@ -108,7 +108,7 @@ body main {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 700;
   color: hsl(217, 12%, 63%);
   display: flex;
@@ -124,12 +124,12 @@ body main {
 }
 
 .hover:hover {
-  background-color: hsl(217, 12%, 63%);
+  background-color: hsl(25, 97%, 53%);
   color: hsl(0, 0%, 100%);
 }
 
 .selected {
-  background-color: hsl(25, 97%, 53%);
+  background-color: hsl(217, 12%, 63%);
   color: hsl(0, 0%, 100%);
 }
 
