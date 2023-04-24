@@ -1,25 +1,23 @@
 .card-thank {
     @include gradient-card();
     border-radius: $border-card;
-    // opacity: 0.4;
     @include size($size-card);
     padding: $padding-card;
     text-align: center;
     .image-thank{
         @include size($size-img-thank);
-        // @include flex(row, center, center);
         text-align: center;
         img {
             @include img-fluid();
             position: relative;
-            right: -81px;
-            top: -7px;
+            right: -5.062rem;
+            top: -0.437rem;
 
         }
     }
 
     .text-selected{
-        margin-top: 9px;
+        margin-top: 0.562rem;
         p {
             @include font-style($font-size-description-card, 700);
             color: $color-orange;
@@ -27,7 +25,7 @@
         }
     }
     .title {
-        margin-top: 34px;
+        margin-top: 2.125rem;
 
         
         h1{
@@ -36,12 +34,12 @@
         }
     }
     .description {
-        margin-top: 13px;
+        margin-top: 0.812rem;
 
         p {
             @include font-style($font-size-description-card, 700);
             color: $color-lightGrey;
-            line-height: 19px;
+            line-height: 1.187rem;
         }
     }
 }

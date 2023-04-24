@@ -1,23 +1,15 @@
 .btn-feedback {
-    margin-top: 26px;
-
+    margin-top: 1.62rem;
     width: 100%;
     height: $button-height;
     border: 0;
     border-radius: $button-border-radious;
-    // padding: 1rem;
     cursor: pointer;
-    // display: flex;
-    // gap: 0.4rem;
-    // justify-content: center;
-
     background-color: $color-orange;
-   
     @include font-style(0.7rem, 700);
-   
     color: $color-white;
     opacity: 0.9;
-    letter-spacing: 2px;
+    letter-spacing: 0.125rem;
     
 
 }

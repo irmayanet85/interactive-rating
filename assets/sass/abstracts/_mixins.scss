@@ -20,7 +20,7 @@
     width: $width;
     height: $width;
     background: $color;
-    border-radius: 99px;
+    border-radius: 6.187rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,23 +34,4 @@
 @mixin gradient-card(){
     background: linear-gradient(0deg,  #171e28 0%, $color-darkBlue 100%);
 
-}
-
-// Media query
-@mixin query ($breakpoint, $direction: min-width) {
-    @media screen and ($direction: $breakpoint) {
-        @content;
-    }
-}
-
-@mixin media-double-breakpoint-up ($break_min, $dir_min: min-width, $break_max, $dir_max: max-width) {
-    @media screen and ($dir_min: $break_min) and ($dir_max: $break_max) {
-        @content;
-    }
-}
-
-@mixin media-hover-effect () {
-    @media (hover: hover) {
-        @content;
-    }
 }
