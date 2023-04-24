@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,400;1,700&display=swap"); /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(216, 12%, 8%);
+  font-family: "Overpass", sans-serif;
+}
+body main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-feedback {
+  margin-top: 26px;
+  width: 100%;
+  height: 36px;
+  border: 0;
+  border-radius: 36px;
+  cursor: pointer;
+  background-color: hsl(25, 97%, 53%);
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  opacity: 0.9;
+  letter-spacing: 2px;
+}
+
+.btn-feedback:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.card-feedback {
+  background: linear-gradient(0deg, #171e28 0%, rgb(37, 45, 55) 100%);
+  border-radius: 31px;
+  width: 366px;
+  height: 366px;
+  padding: 29px;
+}
+.card-feedback .imageStar {
+  width: 48px;
+  height: 48px;
+  background: #1a232c;
+  border-radius: 99px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -2px;
+}
+.card-feedback .title {
+  margin-top: 25px;
+}
+.card-feedback .title h1 {
+  font-size: 25px;
+  font-weight: 900;
+  color: hsl(0, 0%, 100%);
+}
+.card-feedback .description {
+  margin-top: 11px;
+}
+.card-feedback .description p {
+  font-size: 13px;
+  font-weight: 700;
+  color: hsl(217, 12%, 63%);
+  line-height: 19px;
+}
+.card-feedback .list-options {
+  margin-top: 26px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.option {
+  width: 48px;
+  height: 48px;
+  background: rgb(37, 45, 55);
+  border-radius: 99px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: hsl(217, 12%, 63%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.hover:hover {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+
+.selected {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+.card-thank {
+  background: linear-gradient(0deg, #171e28 0%, rgb(37, 45, 55) 100%);
+  border-radius: 31px;
+  width: 366px;
+  height: 366px;
+  padding: 29px;
+  text-align: center;
+}
+.card-thank .image-thank {
+  width: 135px;
+  height: 135px;
+  text-align: center;
+}
+.card-thank .image-thank img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: relative;
+  right: -81px;
+  top: -7px;
+}
+.card-thank .text-selected {
+  margin-top: 9px;
+}
+.card-thank .text-selected p {
+  font-size: 13px;
+  font-weight: 700;
+  color: hsl(25, 97%, 53%);
+}
+.card-thank .title {
+  margin-top: 34px;
+}
+.card-thank .title h1 {
+  font-size: 25px;
+  font-weight: 900;
+  color: hsl(0, 0%, 100%);
+}
+.card-thank .description {
+  margin-top: 13px;
+}
+.card-thank .description p {
+  font-size: 13px;
+  font-weight: 700;
+  color: hsl(217, 12%, 63%);
+  line-height: 19px;
+}
+
+/*# sourceMappingURL=style.css.map */

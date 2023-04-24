@@ -1,0 +1,11 @@
+
+body {
+    background: $color-veryDarkBlue;
+    font-family: $theme-text;
+
+    main {
+        min-height: 100vh;
+    
+        @include flex;
+    }
+}

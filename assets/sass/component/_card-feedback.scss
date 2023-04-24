@@ -1,0 +1,42 @@
+.card-feedback {
+
+    @include gradient-card();
+    border-radius: $border-card;
+    // opacity: 0.4;
+    @include size($size-card);
+    padding: $padding-card;
+    .imageStar {
+        @include circle-box($size-circle, #1a232c);
+        margin-top: -2px;
+        img {
+            
+        }
+    }
+    .title {
+        margin-top: 25px;
+        h1{
+
+            @include font-style($font-size-title-card, 900);
+            color: $color-white;
+
+        }
+    }
+    .description {
+        margin-top: 11px;
+
+        p {
+            @include font-style($font-size-description-card, 700);
+            color: $color-lightGrey;
+            line-height: 19px;
+        }
+    }
+    .list-options {
+
+        margin-top: 26px;
+
+        @include flex(row, space-between, center);
+        
+    }
+
+
+}

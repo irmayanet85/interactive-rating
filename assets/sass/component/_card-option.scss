@@ -1,0 +1,24 @@
+
+    
+    .option{
+        @include circle-box($size-circle, $color-darkBlue);
+        @include font-style($font-size-option-card, 700);
+        color: $color-lightGrey;
+        @include flex(row, center, center);
+        text-align: center;
+        border: none;
+        outline: none;
+        cursor: pointer;
+
+    }
+    .hover:hover {
+        background-color: $color-lightGrey;
+        color: $color-white;
+    }
+
+    .selected {
+        background-color: $color-orange;  
+        color: $color-white;
+     
+    }
+   

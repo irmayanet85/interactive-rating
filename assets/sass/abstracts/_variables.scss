@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+$theme-text: 'Overpass', sans-serif;
+
+// ### Primary
+
+$color-orange: hsl(25, 97%, 53%);
+
+// ### Neutral
+
+$color-white: hsl(0, 0%, 100%);
+$color-lightGrey: hsl(217, 12%, 63%);
+$color-mediumGrey: hsl(216, 12%, 54%);
+$color-darkBlue: hsl(213, 19%, 18%);
+$color-veryDarkBlue: hsl(216, 12%, 8%);
+
+
+
+$color-mediumGrey: #7c8798;
+$color-darkBlue: rgb(37, 45, 55);
+
+// Breakpoints
+
+$screen-xxl: 87.5em;    //1400px Large desktops
+$screen-rwd: 41.25em;   //660px Custom device
+
+//card-feedback
+
+$size-card: 366px;
+$padding-card: 29px;
+$border-card: 31px;
+
+$font-size-title-card: 25px;
+$font-size-description-card: 13px;
+$font-size-option-card: 0.8rem;
+
+$button-border-radious: 36px;
+$button-height: 36px;
+
+//circles
+$size-circle: 48px;
+
+
+//card-thank
+$size-img-thank: 135px;

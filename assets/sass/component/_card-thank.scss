@@ -1,0 +1,47 @@
+.card-thank {
+    @include gradient-card();
+    border-radius: $border-card;
+    // opacity: 0.4;
+    @include size($size-card);
+    padding: $padding-card;
+    text-align: center;
+    .image-thank{
+        @include size($size-img-thank);
+        // @include flex(row, center, center);
+        text-align: center;
+        img {
+            @include img-fluid();
+            position: relative;
+            right: -81px;
+            top: -7px;
+
+        }
+    }
+
+    .text-selected{
+        margin-top: 9px;
+        p {
+            @include font-style($font-size-description-card, 700);
+            color: $color-orange;
+            
+        }
+    }
+    .title {
+        margin-top: 34px;
+
+        
+        h1{
+            @include font-style($font-size-title-card, 900);
+            color: $color-white;
+        }
+    }
+    .description {
+        margin-top: 13px;
+
+        p {
+            @include font-style($font-size-description-card, 700);
+            color: $color-lightGrey;
+            line-height: 19px;
+        }
+    }
+}
