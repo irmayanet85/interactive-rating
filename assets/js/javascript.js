@@ -25,7 +25,7 @@ function createCardThank(value){
 
    const elementsHtml = ` <div class="card-thank" >
 
-                        <div id="thank" >
+                       
 
                         <div class="image-thank">
                             <img src="./assets/images/illustration-thank-you.svg" alt="Ilustration thank you" style="margin: 0px auto;">
@@ -50,8 +50,6 @@ function createCardThank(value){
 
                         </div>
 
-
-                        </div>
                     </div>`;
 
     template.innerHTML = elementsHtml;

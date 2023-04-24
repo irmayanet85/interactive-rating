@@ -8,7 +8,7 @@
 body {
   background: hsl(216, 12%, 8%);
   font-family: "Overpass", sans-serif;
-  font-size: 16px;
+  font-size: 100%;
 }
 body main {
   min-height: 100vh;
@@ -19,7 +19,7 @@ body main {
 }
 
 .btn-feedback {
-  margin-top: 1.62rem;
+  margin-top: 1.12rem;
   width: 100%;
   height: 2.25rem;
   border: 0;
@@ -75,15 +75,29 @@ body main {
 .card-feedback .list-options {
   margin-top: 1.625rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: grid;
   justify-content: space-between;
   align-items: center;
 }
 
-@media (max-width: 28rem) {
+@media (max-width: 26rem) {
   .card-feedback {
     width: 90%;
     height: 90%;
+  }
+}
+@media (max-width: 23.37rem) {
+  .card-feedback {
+    width: 90%;
+    height: 90%;
+  }
+  .card-feedback .list-options {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .card-feedback .list-options .option {
+    margin-bottom: 0.7rem;
+    margin-right: 0.7rem;
   }
 }
 .option {
@@ -105,6 +119,8 @@ body main {
   border: none;
   outline: none;
   cursor: pointer;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .hover:hover {
@@ -124,6 +140,10 @@ body main {
   height: 22.87rem;
   padding: 1.81rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .card-thank .image-thank {
   width: 8.44rem;
@@ -134,9 +154,6 @@ body main {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  position: relative;
-  right: -5.062rem;
-  top: -0.437rem;
 }
 .card-thank .text-selected {
   margin-top: 0.562rem;
@@ -162,6 +179,13 @@ body main {
   font-weight: 700;
   color: hsl(217, 12%, 63%);
   line-height: 1.187rem;
+}
+
+@media (max-width: 26rem) {
+  .card-thank {
+    width: 90%;
+    height: 90%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

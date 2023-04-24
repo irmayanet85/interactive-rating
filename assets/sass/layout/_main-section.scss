@@ -3,7 +3,7 @@
 body {
     background: $color-veryDarkBlue;
     font-family: $theme-text;
-    font-size: 16px;
+    font-size: 100%;
 
 
     main {
@@ -12,3 +12,6 @@ body {
         @include flex;
     }
 }
+
+
+

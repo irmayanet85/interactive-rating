@@ -33,18 +33,33 @@
 
         margin-top: 1.625rem;
 
-        @include flex(row, space-between, center);
+        @include flex(grid, space-between, center);
         
     }
 
 
 }
 
-
-
-@media (max-width: $screen-448) {
-    .card-feedback {
-
+@media (max-width: $screen-smoll) {
+    .card-feedback  {
         @include size(90%);
+
     }
 }
+
+@media (max-width: $screen-verySmoll) {
+    .card-feedback  {
+        @include size(90%);
+
+        .list-options {
+            justify-content: center;
+            flex-wrap: wrap;
+            .option {
+                margin-bottom: 0.7rem;
+                margin-right: 0.7rem ;
+            }
+        }
+        
+    }
+}
+

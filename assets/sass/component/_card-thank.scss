@@ -4,14 +4,12 @@
     @include size($size-card);
     padding: $padding-card;
     text-align: center;
+    @include flex();
     .image-thank{
         @include size($size-img-thank);
         text-align: center;
         img {
             @include img-fluid();
-            position: relative;
-            right: -5.062rem;
-            top: -0.437rem;
 
         }
     }
@@ -43,3 +41,9 @@
         }
     }
 }
+@media (max-width: $screen-smoll) {
+    .card-thank {
+        @include size(90%);
+    }
+}
+
