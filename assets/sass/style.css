@@ -100,6 +100,10 @@ body main {
     margin-right: 0.7rem;
   }
 }
+.hidden {
+  display: none;
+}
+
 .option {
   width: 3rem;
   height: 3rem;
@@ -186,6 +190,9 @@ body main {
     width: 90%;
     height: 90%;
   }
+}
+.hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
