@@ -1,72 +1,55 @@
 /*jshint esversion: 6 */ 
-function selectFeedback(){
+let listOptions = null;
+let valuefeedback = null;
+let cardThank = null;
+let cardFeedBack = null;
+let formFeedback = null;
+let evaluation = null;
 
-    const listoptions = document.querySelectorAll('.option');
-    
-    listoptions.forEach(option => {
+const bindElements = () => {
+    listOptions = document.querySelectorAll('.option');
+    valuefeedback = document.querySelector('#value-feedback');
+    formFeedback = document.querySelector('#form-feedback');
+    cardThank = document.querySelector('.card-thank');
+    cardFeedBack = document.querySelector('.card-feedback');  
+
+};
+
+function selectFeedback(){
+    listOptions.forEach(option => {
         option.addEventListener('click', event => {
-            let element = event.target;
-            if(document.querySelector('.selected'))
+            let selected = document.querySelector('.selected');
+            if(selected)
             {
-                let element_before = document.querySelector('.selected');
-                element_before.classList.remove('selected');
-                element_before.classList.add('hover');
+                selected.classList.remove('selected');
+                selected.classList.add('hover');
             }
-            element.classList.add('selected');
-            element.classList.remove('hover');
+            event.target.classList.add('selected');
+            event.target.classList.remove('hover');
+            evaluation = event.target.value;
     
         });
     
     });
 }
 
-function createCardThank(value){
-   let template = document.querySelector('main');
+function showCardThank(){ 
+    valuefeedback.textContent = evaluation;
+    cardThank.classList.remove("hidden");
+}
 
-   const elementsHtml = ` <div class="card-thank" >
-
-                       
-
-                        <div class="image-thank">
-                            <img src="./assets/images/illustration-thank-you.svg" alt="Ilustration thank you" style="margin: 0px auto;">
-                        </div>
-
-                        <div class="text-selected">
-
-                            <p>You selected <span> ${value} </span> out of 5</p>
-                        </div>
-
-                        <div class="title">
-                            <h1>Thank you!</h1>
-
-                        </div>
-
-                        <div class="description">
-                            <p>
-
-                            We appreciate you taking the time to give a rating. If you ever need more support, 
-                            don’t hesitate to get in touch!
-                            </p>
-
-                        </div>
-
-                    </div>`;
-
-    template.innerHTML = elementsHtml;
-
+function hiddenCardFeedBack(){
+    cardFeedBack.classList.add('hidden');
 }
 
 function sendFeedback(){
-
-    let formFeedback = document.querySelector('#form-feedback');
     formFeedback.addEventListener('submit', (event)=>{
-        let evaluation = 0;
-        const selected = document.querySelector('.selected');
-        if(selected){
-            evaluation = selected.value;
         
-            if (evaluation >= 1 && evaluation <= 5) { createCardThank(evaluation);}
-            else { console.log('You must select a valid assessment');}
+        if(evaluation >= 1 && evaluation <= 5){
+            event.preventDefault();            
+            hiddenCardFeedBack();
+            showCardThank();
+           
         }
         else { alert('You must select an evaluation'); }
 
@@ -74,7 +57,11 @@ function sendFeedback(){
 }
 
 
+const main = () => {
+    bindElements();
+    selectFeedback();
+    sendFeedback();
 
-selectFeedback();
-sendFeedback();
+};
+main();
 
